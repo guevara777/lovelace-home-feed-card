@@ -13,6 +13,7 @@ function toLocaleStringSupportsOptions() {
 export const formatDateTime = (toLocaleStringSupportsOptions()
   ? (dateObj, locales) =>
       dateObj.toLocaleString(locales, {
+        weekday: "long",
         year: "numeric",
         month: "long",
         day: "numeric",
